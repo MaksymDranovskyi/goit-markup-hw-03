@@ -375,6 +375,7 @@ header .container{
 
 .example-border{
     border: 1px solid #EEEEEE;
+    border-top: transparent;
     padding: 20px 24px;
 }
 
