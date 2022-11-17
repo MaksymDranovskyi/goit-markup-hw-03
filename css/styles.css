@@ -8,6 +8,8 @@
     --accent: #2196F3;
     --footer-contact-link-color: rgba(255, 255, 255, 0.6);
     --btn-accent-color: #188CE8;
+    --border: #ececec;
+    --example-border: #EEEEEE;
 }
 
 
@@ -41,7 +43,6 @@ ol {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 img{
@@ -65,7 +66,7 @@ img{
 /* HEADER */
 
 header{
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid var(--border);
 }
 
 .logo {
@@ -81,12 +82,7 @@ header{
     color: var(--primary-text-color);
 }
 
-.header-logo{
-    margin-top: 24px;
-    margin-bottom: 24px;
-}
-
-header .container{
+header .container {
     display: flex;
     align-items: center;
 }
@@ -104,8 +100,6 @@ header .container{
 
 .site-nav-items{
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
     font-weight: 500;
     line-height: 1.14;
@@ -117,6 +111,11 @@ header .container{
     margin-right: 50px;
 }
 
+.site-nav-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .current {
     color: var(--accent);
 }
@@ -124,10 +123,10 @@ header .container{
 .contact-list {
     display: flex;
     margin-left: auto;
+
 }
 
-.contact-list-items{
-    margin-rigth: 40px;
+.contact-link{
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -279,8 +278,12 @@ header .container{
     margin-right: 30px;
 }
 
+.worker{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .worker-name{
-    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -290,7 +293,6 @@ header .container{
 }
 
 .worker-info{
-    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.18;  
     text-align: center;
@@ -303,7 +305,7 @@ header .container{
 }
 
 .footer-logo{
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .footer-logo > span{
@@ -319,7 +321,6 @@ header .container{
 }
 
 .footer-contact-item{
-    display: flex;
 }
 
 .footer-contact-item:not(:last-child){
@@ -331,8 +332,8 @@ header .container{
 }
 
 .hero-section{
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .filter-list{
@@ -374,8 +375,8 @@ header .container{
 }
 
 .example-border{
-    border: 1px solid #EEEEEE;
-    border-top: transparent;
+    border: 1px solid var(--example-border);
+    border-top: none;
     padding: 20px 24px;
 }
 
